@@ -2,7 +2,7 @@ from telegram.ext import *
 from telegram import *
 from pygismeteo import Gismeteo
 
-TOKEN = "6345663744:AAHDQ0QfXK9S4OcMg1wJ0mQeXXaLc0uyMdo"
+TOKEN = ""
 gm = Gismeteo()
 
 field = [[" "] * 3 for _ in range(3)]

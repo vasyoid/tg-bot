@@ -27,7 +27,7 @@ async def handle_callback(update: Update, context):
 
 async def handle_location(update: Update, context):
     weather = gm.current.by_coordinates(update.message.location.latitude, update.message.location.longitude)
-    await update.message.reply_text(f"{weather.temperature.air.c} °C\n{weather.description.full}")
+    await update.message.reply_text(f"Температура: {weather.temperature.air.c} °C\n{weather.description.full}")
 
 
 def main():
